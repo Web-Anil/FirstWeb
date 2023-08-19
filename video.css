@@ -1,0 +1,209 @@
+body {
+  background-color: rgb(0 42 66);
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+/* ************
+Meadia Player Container start Here
+************* */
+#Media-Player-Container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+/* ~~~~~~~~popUp Container~~~~~~~~~~ */
+#popUp-Container {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  /* height: 662px; */
+  /* border: 5px solid orange; */
+  background-color: #565454;
+  box-shadow: 2px 2px 10px black;
+  display: flex;
+  flex-direction: column;
+}
+#popUp-video {
+  width: 100%;
+  height: 580px;
+  text-align: center;
+  /* border: 5px solid white; */
+}
+#popUp-Container video {
+  width: 100%;
+  height: 100%;
+}
+#popUp-Controls-Container {
+  /* border: 5px solid rgb(217, 255, 0); */
+  background-color: rgb(153 169 20);
+  width: 100%;
+  height: 87px;
+  position: relative;
+  /*
+  bottom: 0px; */
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+#video-timer {
+  width: 120px;
+  height: 23px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  font-size: 15px;
+  position: absolute;
+  right: 0px;
+  padding-left: 15px;
+  font-weight: bold;
+}
+#SeekBar-Container {
+  width: 90%;
+  height: 22px;
+  background-color: orange;
+  /* position: absolute;
+  bottom: 64px; */
+  border-radius: 50px;
+  padding: auto 3px;
+  display: block;
+}
+
+#SeekBar {
+  width: 0%;
+  height: 13px;
+  border-radius: 50px;
+  background-color: aqua;
+  position: relative;
+  left: 11px;
+  top: 3.5px;
+}
+#video-title {
+  display: inline-block;
+  color: #565454;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px purple;
+  background-color: #e3f10c;
+  text-align: center;
+}
+
+#video-btn-container {
+  display: inline-block;
+  margin-left: 130px;
+}
+#video-btn-container button {
+  margin: auto 4px;
+  font-size: 40px;
+}
+
+/* ~~~~~~~~~~video-container~~~~~~~~~~ */
+
+#video-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.same-video-box {
+  margin: 10px auto;
+  /* border: 2px solid rgb(255, 0, 43); */
+  width: 256px;
+  height: 144px;
+  border-radius: 15px;
+  background-color: rgba(0, 255, 76, 0.74);
+  display: inline-block;
+  position: relative;
+  transition: 1s;
+}
+.same-video-box:hover {
+  transform: scale(1.15);
+  box-shadow: 2px 2px 20px black;
+}
+.same-video-box video {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.top-video-text {
+  position: absolute;
+  top: 7px;
+  left: 4px;
+  background-color: rgb(132, 0, 255);
+  color: white;
+  font-weight: lighter;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  width: 35px;
+  height: auto;
+  border: 2px solid #e3f10c;
+  border-radius: 40px;
+}
+.bottom-video-text {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.63);
+  color: white;
+  font-weight: lighter;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  height: 28px px;
+  /* padding: 10px 30px; */
+  border-radius: 0px 0px 14.5px 14.5px;
+}
+@media (max-width: 991px) {
+  .same-video-box {
+    width: 201px;
+    height: 113px;
+  }
+  #video-btn-container {
+    margin-left: 10px;
+  }
+  #video-timer {
+    width: 100px;
+    font-size: 15px;
+    padding-left: 1px;
+    padding-top: 2px;
+  }
+  #popUp-video {
+    height: 450px;
+  }
+}
+@media (max-width: 400px) {
+  #video-btn-container button {
+    margin: auto 0px;
+    font-size: 15px;
+  }
+  #video-title {
+    font-size: 12px;
+  }
+  #popUp-video {
+    width: 100%;
+    height: 220px;
+    text-align: center;
+    /* border: 5px solid white; */
+  }
+  #video-btn-container {
+    margin-left: 0px;
+  }
+  #SeekBar-Container {
+    width: 100%;
+  }
+  #video-timer {
+    top: 23px;
+    width: 69px;
+    height: 18px;
+    font-size: 10px;
+    padding-left: 1px;
+    padding-top: 6px;
+  }
+  #popUp-Controls-Container {
+    height: 58px;
+  }
+}

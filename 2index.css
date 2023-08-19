@@ -1,0 +1,466 @@
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+* {
+  /* border: 2px solid rgb(0, 0, 0); */
+  /* padding: 0;*/
+  margin: 0;
+}
+
+nav {
+  /* position: fixed; */
+  /* background-color: blueviolet; */
+  display: flex;
+
+  /* border: 2px solid black; */
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  z-index: 1;
+}
+div {
+  /* display: inline; */
+  margin: auto 3px;
+}
+#logimg {
+  border-radius: 52px;
+  /* padding-left: 30px; */
+  margin-left: 20px;
+
+  width: 75px;
+  height: 75px;
+}
+.navMenu {
+  margin: auto;
+}
+ul {
+  padding: 3px;
+  display: flex;
+  /* float: left; */
+}
+ul li {
+  list-style: none;
+  margin: 35px;
+}
+li a {
+  /* padding: auto; */
+  font-size: 30px;
+  font-family: "Kenia", cursive;
+  /* font-family: "Zen Dots", cursive; */
+  text-decoration: none;
+  color: white;
+}
+li a:hover {
+  /* border: 2px groove black; */
+  color: black;
+  border-radius: 5px;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(149, 255, 10) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding: 3px 3px;
+}
+
+#search {
+  margin-right: 40px;
+  /* border: 2px solid black; */
+  border-radius: 30px;
+  border-style: none;
+  border-color: none;
+  width: 120px;
+  height: 40px;
+}
+.searchMenu {
+  display: flex;
+}
+#searchLogo {
+  text-decoration: none;
+  font-size: 30px;
+  /* margin-top: 3px; */
+}
+
+#leftMenu {
+  position: sticky;
+  margin: 0px 0px;
+}
+.leftMenuA:hover {
+  padding-right: 10px;
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+}
+#leftUL {
+  /* display: none; */
+
+  margin: 0px -38px;
+  flex-direction: column;
+  width: 50%;
+}
+.left_li {
+  /* width: 50px; */
+  height: 9px;
+}
+
+#bodyVideo {
+  /*avengers*/
+  width: 1349px;
+  height: 759px;
+  position: absolute;
+  z-index: -1;
+}
+#videoContainer {
+  /* margin: auto; */
+  /* border: 2px solid white; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Allvideo {
+  border: 2px solid rgb(2, 0, 0);
+  border-top-color: aqua;
+  border-bottom-color: aqua;
+  /* padding: 2px; */
+  margin: 27px auto;
+  width: 170px;
+  height: 231px;
+  /* border-width: 3px; */
+  border-radius: 21px;
+  transition: 1s;
+}
+.Allvideo:hover {
+  transform: scale(1.5);
+}
+
+/* .Allvideo:hover { */
+/* border: 2px solid white; */
+/* border-width: 3px; */
+/* border-radius: 21px; */
+/* position: absolute; */
+/* padding: 90px; */
+/* margin: 90px auto; */
+/* width: 170px; */
+/* height: 231px; */
+/* } */
+
+/* #v5 { */
+/* position: relative; */
+/* padding: 2px; */
+/* margin: 27px auto; */
+/* width: 170px; */
+/* height: 231px; */
+/* transform: translateX(-300%); */
+/* transform: translateX(50%); */
+/* z-index: 66; */
+/* border: 2px solid white; */
+/* border-width: 3px; */
+/* border-radius: 21px; */
+/* } */
+
+/*~~~~~~~~12/12/2022~~~~~~~~~~~*/
+.slider {
+  /* border: 2px solid white; */
+  margin: auto 74px;
+  /* display: flex;
+  flex-direction: column; */
+  padding: 12px;
+  /* display: inline; */
+  /* float: left; */
+}
+#sliderPara {
+  /* margin: auto 3px; */
+  margin-bottom: 13px;
+  line-height: 40px;
+
+  /* border: 2px solid white; */
+  color: aliceblue;
+  font-family: "Fredoka One", cursive;
+  /* font-family: "Zen Dots", cursive; */
+  /* font-weight: 1500; */
+  font-size: 30px;
+  /* float: left; */
+  box-shadow: 2px 2px 20px 2px rgb(155, 228, 250);
+  border-radius: 15px;
+  display: inline;
+  padding: 6px;
+}
+
+#SliderImage {
+  /* border: 2px solid white; */
+  display: block;
+  width: 1068px;
+  height: 320px;
+  padding: 50px;
+  margin: 17px auto;
+
+  background-image: url("posters/slPOS3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  box-shadow: 2px 2px 20px white;
+
+  border-radius: 15px;
+
+  animation: first 15s infinite ease-in-out;
+  transition: 50ms;
+}
+#SliderImage:hover {
+  border: 5px solid white;
+  transform: scale(1.02);
+}
+/* @media screen {
+  
+} */
+@keyframes first {
+  0% {
+    background-image: url("posters/slPOS1.png");
+  }
+  25% {
+    background-image: url("posters/slPOS2.png");
+  }
+  50% {
+    background-image: url("posters/slPOS3.png");
+  }
+  75% {
+    background-image: url("posters/slPOS4.png");
+  }
+  100% {
+    background-image: url("posters/slPOS7.png");
+  }
+}
+
+/* .slider2nd {
+  margin: auto 74px;
+  padding: 12px;
+  border: 5px solid white;
+  display: flex;
+  flex-direction: column;
+}
+#SliderImage2nd {
+  border: 5px solid rgb(255, 0, 0);
+  margin-top: 0px;
+  padding: 0px;
+  visibility: hidden;
+}
+#SlideIMG {
+  margin: 0px;
+  border: 5px solid rgb(0, 255, 76);
+  width: 1145px;
+  height: 320px;
+  padding: 0px;
+  /* margin: 30px; 
+  box-shadow: 2px 2px 20px white;
+  /* background-size: 100% 100%; */
+/* display: inline-block; 
+  visibility: visible;
+
+  /* justify-content: center; 
+}
+#SliderImage2nd:hover {
+  border: 15px solid white;
+  transform: scale(1.02);
+} 
+*/
+
+.slider2ndContainer {
+  margin: auto auto 50px;
+  width: 85%;
+}
+
+#sliderPara2nd {
+  display: inline-block;
+  margin: 30px 0px;
+  margin-top: 100px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  color: rgb(225, 255, 55);
+}
+#SliderImage2nd {
+  display: block;
+}
+
+#SlideIMG {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  border: 0.5px solid rgb(0, 3, 3);
+  transition: 500ms;
+}
+#SlideIMG:hover {
+  display: block;
+  width: 100%;
+  border-radius: 20px;
+  transform: scale(1.009);
+  box-shadow: 2px 2px 20px rgb(212, 195, 195);
+  border: 0.5px solid cyan;
+}
+.dotContainer {
+  position: absolute;
+  left: 584px;
+  bottom: -950px;
+}
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 30px;
+  margin: 0px 4px;
+  padding: 0px;
+  transition: 1s;
+}
+.activeDot {
+  border: 4px solid rgb(81, 255, 0);
+  /* background-color: red; */
+}
+
+/* ~~~~~~~main Slider~~~~~~~~~~ */
+#MainSliderContainer {
+  max-width: 100%;
+  padding: 0px;
+  margin: 0px;
+  /* position: absolute; */
+}
+.MySlide {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mainSliderimage {
+  /* vertical-align: middle; */
+  max-width: 100%;
+  display: block;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  user-select: none;
+  font-weight: bold;
+  font-size: 60px;
+  transition: 0.6s;
+  /* padding: ; */
+  /* position: relative; */
+  /* border: 2px solid; */
+  padding: 214px 20px;
+}
+.prev {
+  position: absolute;
+  top: 21%;
+  left: 0px;
+  width: auto;
+  /* padding-left: 40px; */
+  /* margin-left: 0px; */
+}
+
+.next {
+  position: absolute;
+  right: 0px;
+  top: 21%;
+}
+.prev:hover,
+.next:hover {
+  box-shadow: rgb(0 0 0 / 60%) 0px 0px 1rem;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.topContent {
+  position: absolute;
+  top: 155px;
+  right: 85px;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+  background-color: rgb(0 0 0 / 46%);
+  box-shadow: 5px 5px 80px black;
+  border-radius: 11px;
+  padding: 10px 20px;
+}
+.iamgeCounter {
+  position: relative;
+  top: 30px;
+  left: 120px;
+  color: white;
+  box-shadow: 2px 2px 40px black;
+  /* width: 5px; */
+  padding: 2px 10px;
+  border-radius: 40px;
+  display: inline-block;
+  background-color: rgba(31, 28, 26, 0.6);
+}
+.bottomContent {
+  position: relative;
+  bottom: 100px;
+  left: 185px;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.568);
+  box-shadow: 5px 5px 80px black;
+  border-radius: 11px;
+  padding: 10px 20px;
+  display: inline-block;
+}
+.bottomContent:hover {
+  background-color: rgba(0, 0, 0, 0.411);
+  box-shadow: 0.1px 0.1px 10px rgba(255, 254, 254, 0.075);
+}
+
+.MdotContainer {
+  margin: auto;
+  position: relative;
+  bottom: 55px;
+}
+.Mdot {
+  cursor: pointer;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(219, 205, 205);
+  border-radius: 30px;
+  margin: auto 5px;
+  transition: 0.6s;
+  box-shadow: 2px 2px 10px rgba(185, 156, 156, 0.986);
+}
+
+.Mactive,
+.Mdot:hover {
+  background-color: rgb(255, 0, 149);
+}
+.Mdot:active {
+  background-color: rgb(89, 0, 255);
+  border: 2px solid rgb(123, 255, 0);
+  transition: 0s;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  position: relative;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.6;
+    /* left: 500px; */
+  }
+  to {
+    opacity: 1;
+    /* left: 0px; */
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}

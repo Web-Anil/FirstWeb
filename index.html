@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>ANIL | Home </title>
+</head>
+
+<body>
+  <header id="header-container">
+    <div id="head-logo-box">
+      <h4 class="head-logo-same-box" id="Anil">ANIL</h4>
+      <b class="logo-space-design head-logo-same-box"
+        style="width: 5px; height: 50px;
+        background-image: linear-gradient(to bottom, #e000c3, #f200a6, #fd0089, #ff006d, #ff0053, #ff333e, #ff4f27, #fc6800, #ef9200, #d0ba00, #9cdf00, #00ff22);"></b>
+      <img class="head-logo-same-box" src="logo.jpg" alt="logo">
+    </div>
+    <div id="head-nav-menu-box">
+      <ul class="head-ul" style="display: flex;">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">PAGE 1</a></li>
+        <li><a href="#">PAGE 2</a></li>
+        <li><a href="#">PAGE 3</a></li>
+        <li><a href="#">PAGE 4</a></li>
+      </ul>
+    </div>
+    <div id="head-search-box">
+      <input type="search" id="head-search" placeholder="Search">
+      <h3 id="head-search-logo" style="padding:2px 10px 0px 0px;">&#128269</h3>
+    </div>
+  </header>
+
+  <div id="SliderContainer">
+    <div class="topBox">
+      <div class="topContent">4K Movies</div>
+      <div class="imgCounter"></div>
+    </div>
+
+    <div id="ImageContainer">
+
+      <a href="#" target="_blank" class="imgLink" id="MainImageContainer">
+        <img class="SliderImg" src="mainSlider/IMG_1.jpg" alt="not">
+        <img class="SliderImg" src="mainSlider/IMG_2.jpg" alt="not">
+        <img class="SliderImg" src="mainSlider/IMG_3.jpg" alt="not">
+        <img class="SliderImg" src="mainSlider/IMG_4.jpg" alt="not">
+        <img class="SliderImg" src="mainSlider/IMG_5.jpg" alt="not">
+        <img class="SliderImg" src="mainSlider/IMG_6.jpg" alt="not">
+      </a>
+
+    </div>
+
+    <a class="previous" id="previous" onclick="slider(100)">&#10094</a>
+    <a class="next" id="next" onclick="slider(-100)">&#10095</a>
+
+    <div class="bottomBox">
+      <div class="bottomContent">this is bottomContent</div>
+    </div>
+
+    <div class="pointContainer">
+      <span class="point point1" onclick="points(0)"></span>
+      <span class="point point2" onclick="points(-100)"></span>
+      <span class="point point3" onclick="points(-200)"></span>
+      <span class="point point4" onclick="points(-300)"></span>
+      <span class="point point5" onclick="points(-400)"></span>
+      <span class="point point6" onclick="points(-500)"></span>
+    </div>
+  </div>
+
+  <div id="videoContainer">
+    <a href="ShinChanSeason_1.html"><video id="v1" src="Shinchan S01E02.mp4" poster="Thumbnail/ShinChan-Season-1.jpg"
+        class="Allvideo"></video></a>
+    <a href="DoremonSeason_1.html"><video id="v2" src="Shinchan S01E02.mp4" poster="Thumbnail/Doremon-poster.jpg"
+        class="Allvideo"></video></a>
+    <a href="TheKapilSeason_1.html"><video id="v3" src="Shinchan S01E02.mp4" poster="Thumbnail/KapilPoster.jpg"
+        class="Allvideo"></video></a>
+    <a href="ShinChanSeason_1.html"><video id="v4" src="Shinchan S01E02.mp4" poster="Thumbnail/TarakMKUC.jpg"
+        class="Allvideo"></video></a>
+    <!-- <a href="#"><video id="v5" src="Shinchan S01E02.mp4" poster="pos1.jpg" class="Allvideo"></video></a> -->
+  </div>
+
+  <div class="trial">
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, alias quidem natus ipsum veniam pariatur amet
+
+      quod ipsa quasi quibusdam nulla
+      repellat aperiam? Voluptate accusamus cum temporibus! Amet, fuga sunt, inventore eaque placeat distinctio
+      voluptatem repellendus repellat alias nostrum sit in similique? Neque magni voluptates rem! Excepturi suscipit
+      delectus non consectetur, voluptate accusantium doloremque, qui dolor dolore culpa explicabo voluptatem sint
+      perspiciatis deleniti accusamus iusto ipsa sed perferendis reprehenderit dignissimos rerum enim tenetur nam? Ex,
+      nemo officiis doloribus commodi molestiae ut voluptatibus. Consectetur facilis illum aliquam doloribus ad!
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident iusto reiciendis quibusdam qui dolor, veritatis
+      dicta, corrupti rerum, eius dolore itaque consectetur voluptatum impedit. Maxime recusandae veniam optio quos iure
+      molestiae quo, quasi, neque nulla sit officia dolorem aspernatur. Rerum mollitia, modi fugiat odit voluptate nobis
+      molestiae error at maiores, quos, possimus harum fugit expedita dolores fuga in? Cum quibusdam reiciendis
+      distinctio nihil maiores repudiandae, odio eveniet explicabo? Nisi ratione aut repudiandae. Nesciunt commodi ipsa
+      fugiat quia, libero eveniet qui neque! Eaque quod earum unde aspernatur labore nam possimus ea corporis
+      exercitationem, voluptatem, harum tenetur pariatur sunt deleniti temporibus doloribus!
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
